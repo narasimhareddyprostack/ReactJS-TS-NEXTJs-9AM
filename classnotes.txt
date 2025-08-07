@@ -1,0 +1,9 @@
+react Installation
+----------------------
+option-1: using npx command
+
+npx create-react-app react31
+cd react31
+npm start
+
+mongodb://localhost:27017/
