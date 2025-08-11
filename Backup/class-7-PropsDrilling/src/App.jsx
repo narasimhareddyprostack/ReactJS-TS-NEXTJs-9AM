@@ -1,10 +1,10 @@
-import Message from "./Message/Message";
+import CompA from './PropsDrilling/CompA'
 let App =()=>{
-   
+
     return <div>
             <h3>App Component</h3>
             <hr />
-            <Message/>
+            <CompA/>
             </div>
 }
 export default App;
