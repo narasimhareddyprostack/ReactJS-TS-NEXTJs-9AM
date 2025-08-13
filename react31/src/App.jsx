@@ -1,12 +1,12 @@
-import Product from "./Product/Product";
-import Message from "./Message/Message";
-import Test from "./Message/Test";
-let App =()=>{
-   
+import React from 'react'
+import Product from './Products/Product'
+const App = () => {
+  
     return <div>
-            <h3>App Component</h3>
-            <hr />
-             <Product/>
+                <h4>App component</h4>
+                <hr/>
+                <Product/>
             </div>
 }
-export default App;
+
+export default App
