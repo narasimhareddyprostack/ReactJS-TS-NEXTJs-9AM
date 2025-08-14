@@ -1,11 +1,11 @@
 import React from 'react'
-import Message from './Messages/Message'
+import Product from './Products/Product'
 const App = () => {
   
     return <div>
                 <h4>App component</h4>
                 <hr/>
-                <Message />
+                <Product/>
             </div>
 }
 
