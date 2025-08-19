@@ -56,14 +56,16 @@ let employees=[{"eid":1,"ename":"Roxane","gender":"Female"},
                     <div className="col-6">
                         <table className='table'>
                             <thead className='bg-dark text-white'>
-                                <th>Employee Id</th>
-                                <th>Name</th>
-                                <th>Gender</th>
+                                <tr>
+                                    <th>Employee Id</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                </tr>
                             </thead>
                             <tbody>
                                 {
-                                    employees.map((emp)=>{
-                                        return <tr>
+                                    employees.map((emp,index)=>{
+                                        return <tr key={index}>
                                                     <td>{emp.eid}</td>
                                                     <td>{emp.ename}</td>
                                                     <td>{emp.gender}</td>
