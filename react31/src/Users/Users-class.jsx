@@ -5,7 +5,7 @@ class Users extends React.Component{
         super(props)
         this.state={users:[]}
     }
-   componentDidMount(){  
+    get_Data=()=>{  
         Axios.get('https://jsonplaceholder.typicode.com/users')
         .then((resp)=>{
             this.setState({users:resp.data})
@@ -18,7 +18,7 @@ class Users extends React.Component{
                             <div className="col-6">
                             <h4>Users Component</h4>
                     <pre>{JSON.stringify(this.state.users)}</pre>
-                   
+                    <button onClick={this.get_Data}>Get Data</button>
                     <table className="table">
                         <thead>
                         <tr>
@@ -39,7 +39,7 @@ class Users extends React.Component{
                         }
                         </tbody>
                     </table>
-                        </div>
+                            </div>
                         </div>
                     
                 </div>
