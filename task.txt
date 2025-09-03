@@ -1,0 +1,39 @@
+API Usage:Get Products
+API URL:https://dummyjson.com/products
+Method :GET
+Required Fileds:None
+Access Type:Public
+
+Task 1:
+invoke above restapi - display all products in html table
+Task 2: 
+invike above restapi - display only beauty product
+	Hint: use conditional Rendering
+	try - class and functional components
+----------------------------------------------------------
+React Intro
+Installation
+Applicaiton structure and  project flow
+component Deep Drive
+Props, Props Drilling
+State - State management with functional and class 
+Event Handling and Event Binding
+List Rendering
+How to enable Bootstrap?
+Class - Component Life Cycle Methods
+React Hooks - Introduciton
+List of Hooks
+1)useState
+2)useEffect
+3)useMemo
+4)useRef
+5)useCallback
+6)useParams
+7)useReducer
+8)useSelector
+9)useDispatch
+10)useContext
+Axios - HTTP
+How to invoke rest api in react JS?
+
+Form Handling in React Js
