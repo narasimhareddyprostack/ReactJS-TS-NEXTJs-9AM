@@ -1,8 +1,9 @@
 import {NavLink,BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Navbar from './Navbar/Navbar';
 import Home from './components/Home'
-import Employees from './components/Employees';
-import Login from './components/Login';
+import About from './components/About'
+import Services from './components/Services';
+import Contact from './components/Contact'
 let App=()=>{
     let mystyles={color:"blue"}
     return <div>
@@ -11,8 +12,9 @@ let App=()=>{
                 <Routes>
                     <Route path="/"  element={<Home/>}/>
                     <Route path="/index"  element={<Home/>}/>
-                    <Route path="/employees"  element={<Employees/>}/>
-                    <Route path="/login"  element={<Login/>}/>
+                    <Route path="/about"  element={<About/>}/>
+                    <Route path="/services"  element={<Services/>} />
+                    <Route path="/contact"  element={<Contact/>} />
                     <Route path="*" element={<h3 style={mystyles}>404 - Page Not Found</h3>} />
                 </Routes>
             </Router>
