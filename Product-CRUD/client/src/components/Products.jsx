@@ -18,8 +18,10 @@ const Products = () => {
                                       products.map((product)=>{
                                         return <div className='col-3'>
                                         <div className="card">
-                                          <div className="card-body"></div>
                                           <div className="card-header">
+                                            <img src={product.image} alt="" />
+                                          </div>
+                                          <div className="card-body">
                                           <ul className='list-group'>
                                             <li className='list-group-item'>{product.name}</li>
                                             <li className='list-group-item'>{product.price}</li>
