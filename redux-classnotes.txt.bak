@@ -1,0 +1,64 @@
+1. What is React Component?
+	Component describe ui?
+	how to describe ui? to return UI
+2. What is Redux Action?
+   Redux Action is function
+   It will return actionable object
+
+   let gmAction=()=>{
+	return {"type":GM}
+   }
+3.How to dispatch an Redux action from component?
+using useDispatch() hook.
+import {useDispatch,useSelector} from 'react-redux'
+let dispatch= useDispatch();
+
+dispatch(gmAction())
+dispatch(gaAction())
+
+4.What is Redux Action?
+Redux action is function, 
+it will return actionable object
+
+let gmAction=()=>{
+	return {"type":"GM"}
+}
+let gaAction=()=>{
+	return {"type":"GA"}
+}
+
+
+5.What is Redux Reducer?
+Reducer is pure function.
+It will take two arguments 1.action 2.state
+It will take two arguments 1.action 2.state=initialState
+
+let messageReducer = (action,state)=>{
+
+}
+
+based on action types,Reducer will create/update store.
+
+
+6.What is Redux Store?
+ Store - collection of states.
+ How to create Redux Store?
+
+ createStore()     -deprecated
+ configureStore()  -new using Redux/toolkit
+
+ creating store based on reducer?
+
+ 7.Once store ready?
+   how to handover store to react application.
+   using <Provider> ?
+   import {Provider} from 'react-redux'
+
+    <Provider store={store}>
+                <h1>App Comp</h1>
+                <hr />
+                <Message/>
+    </Provider>
+
+8.how to read store data?
+  using - useSelector() hook.
